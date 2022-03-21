@@ -1,0 +1,33 @@
+﻿  <!-- ======= About Us Section ======= -->
+@model List<News>
+
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>أخبار @ViewData["cat"] </h2>
+            <p>أخبار الرياضة لحظة بلحظة عبر شبكة سكاي نيوز عربية التي تغطي كل دوريات كرة القدم المهمة، وبطولات التنس وكرة السلة وسباقات السيارات، إضافة إلى نتائج المباريات</p>
+        </div>
+
+        <div class="row" style="margin:30px">
+            @foreach (var item in Model)
+            {
+                <div data-aos="fade-right" style="width:300px ; height:300px" alt="">
+                    <img src="~/assets/img/@item.Image" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" style="margin:13px">
+                    <h3>@item.Title</h3>
+                    <p>@item.Date</p>
+                    <p class="fst-italic">
+                        @item.Topic
+                    </p>
+                    <center>
+                        <a class="btn btn-danger" href="/Home/Delete/@item.Id" >Delete</a>
+                    </center>
+                </div>
+             
+            }
+        </div>
+
+    </div>
+</section><!-- End About Us Section -->

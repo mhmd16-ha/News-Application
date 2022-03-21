@@ -1,0 +1,27 @@
+﻿@model List<Category>
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <a href="/Home/News/@item.Id">
+
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100" style="width:100%; margin-top:15px">
+                            <div class="icon"><i class="bi bi-newspaper"></i></div>
+                            <h4 class="title"><a href="">@item.Name</a></h4>
+                            <p class="description">@item.Description</p>
+                        </div>
+                    </a>
+
+                </div>
+                }
+            </div>
+
+
+        </div>
+        </section>
+   
