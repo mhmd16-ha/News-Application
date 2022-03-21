@@ -6,6 +6,6 @@
 ### ✔ GitHub
 
 # preview👍
-https://youtu.be/-F64R5Cmkkw?v=<VIDEO ID>
+https://youtu.be/-F64R5Cmkkw/<VIDEO URL>
 
 
